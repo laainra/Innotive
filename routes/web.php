@@ -21,7 +21,8 @@ Route::get('/', function () {
 
 Route::post('register',[RegisterController::class, 'store'])->name('register');
 Route::get('/innotive', [LoginController::class, 'index']);
-Route::post('login', [LoginController::class, 'authenticate'])->name('login');
+Route::get('/innotive/logout', [LoginController::class, 'logout'])->name('logout'); //logout button blm ada
+Route::post('innotive/login', [LoginController::class, 'authenticate'])->name('login');
 Route::get('/dashboard', function () {
     return view('dashboard');
 });

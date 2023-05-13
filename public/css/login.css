@@ -97,6 +97,21 @@ form.sign-in-form {
   color: #333;
 }
 
+/* Styling for alert box */
+.alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Styling for alert-danger box */
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
 .input-field input::placeholder {
   color: #aaa;
   font-weight: 500;

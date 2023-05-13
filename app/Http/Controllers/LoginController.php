@@ -31,6 +31,11 @@ class LoginController extends Controller
                 ->withSuccess('You have Successfully logged in');
         }
 
-        return redirect("login")->with(['loginError' => 'Oppes! You have entered invalid credentials']);
+        return redirect("login")->with(['loginError' => 'Oppes! Username or password is incorrect']);
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('innotive');
     }
 }

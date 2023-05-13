@@ -13,11 +13,11 @@
   </head>
   <body>
     <div class="container">
-      {{-- @if (session('success'))
+      @if (session('success'))
       <div class="alert alert-success">
           {{ session('success') }}
       </div>
-      @endif --}}
+      @endif
   
       <div class="forms-container">
         <div class="signin-signup">
@@ -26,7 +26,7 @@
             <h2 class="title">Sign in</h2>
             <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" name="username" placeholder="Username" autofocus required/>
+                <input type="text" name="username" placeholder="Username" value="{{old('username')}}" autofocus required/>
             </div>
             <div class="input-field">
                 <i class="fas fa-lock"></i>
